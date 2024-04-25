@@ -92,7 +92,7 @@ then
 fi
 
 # directory name
-if [ "$dir" = "mmcblk0p1" && -d "/home/orangepi/printer_data"]
+if [ "$dir" = "mmcblk0p1"]
 then
   AUTOMOUNT_DIR="/home/orangepi/printer_data"
 else
