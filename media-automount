@@ -92,9 +92,9 @@ then
 fi
 
 # directory name
-if [ "$dir" = "mmcblk0p1" ]
+if [ "$dev" = "/dev/mmcblk0p1" ]
 then
-  AUTOMOUNT_DIR="/home/orangepi/printer_data"
+  AUTOMOUNT_DIR="/home/orangepi/printer_data/mmcblk0p1"
 else
   AUTOMOUNT_DIR="${mediadir}/${LABEL:-${dev##*/}}.$TYPE"
 fi
